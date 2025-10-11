@@ -1,0 +1,304 @@
+/* -------- Global basics -------- */
+body {
+  font-family: "Poppins", system-ui, Arial, sans-serif;
+  background-color: #0d0d0d; /* dark base */
+  color: #f8f9fa; /* white text */
+}
+
+.text-gold {
+  color: #d4af37;
+}
+/* -------- Navbar -------- */
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 2px solid #d4af37;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  font-weight: 500;
+  color: #f8f9fa !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* -------- Card Styling -------- */
+.card {
+  transition: all 0.35s ease;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #d4af37;
+  box-shadow: 0 6px 14px rgba(212, 175, 55, 0.25);
+}
+
+/* -------- Product image -------- */
+.card img {
+  height: 220px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* -------- Add to Cart button -------- */
+.btn-add {
+  background-color: #d4af37;
+  color: #111;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-add:hover {
+  background-color: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* -------- Footer -------- */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+/* -------- Cart Badge -------- */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #d4af37;
+  color: #111;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+  font-weight: 600;
+}
+
+/* -------- Page spacing -------- */
+.container {
+  margin-top: 40px;
+}
+
+/* -------- Contact Page Styling -------- */
+form .form-control {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+form .form-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  background-color: #000;
+  color: #fff;
+}
+
+form label {
+  color: #d4af37;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+/* -------- Cart Page Styling -------- */
+.list-group-item {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #1c1c1c;
+  transform: scale(1.01);
+  border-color: #d4af37;
+}
+
+.btn-outline-secondary {
+  border-radius: 50%;
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #d4af37;
+  color: #111;
+  border-color: #d4af37;
+}
+
+.btn-outline-danger {
+  border-radius: 6px;
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d4af37;
+  color: #111;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111;
+  color: #fff;
+}
+
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table img {
+  transition: transform 0.3s ease;
+}
+
+.table img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+  }
+}
+
+/* -------- Buttons: general hover -------- */
+.btn-outline-secondary:hover,
+.btn-outline-danger:hover,
+.btn-add:hover {
+  transition: all 0.3s ease;
+}
+
+/* -------- Grand Total Card -------- */
+.card-total {
+  background-color: #000;
+  border: 1px solid #d4af37;
+  color: #fff;
+  text-align: right;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.25);
+}
+
+.card-total h4 span {
+  color: #d4af37;
+}
+
+
+/* -------- Hero Banner Section -------- */
+.hero-banner {
+  position: relative;
+  background-image: url("./assets/rudy-dong-9bAPKoZzHgA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.7); /* Black transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  color: #d4af37; /* Gold text */
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  margin-bottom: 25px;
+}
+
+.btn-banner {
+  background-color: #d4af37;
+  color: #111;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-banner:hover {
+  background-color: #fff;
+  color: #111;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
