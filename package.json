@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+    "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
@@ -29,9 +28,7 @@
     "globals": "^16.4.0",
     "vite": "npm:rolldown-vite@7.1.14"
   },
-
   "homepage": "https://github.com/M-Bilal-Khalil/Nexora-Store/",
-
   "resolutions": {
     "vite": "npm:rolldown-vite@7.1.14"
   }
